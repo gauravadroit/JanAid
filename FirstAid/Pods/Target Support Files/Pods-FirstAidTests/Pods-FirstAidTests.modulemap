@@ -1,0 +1,6 @@
+framework module Pods_FirstAidTests {
+  umbrella header "Pods-FirstAidTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
