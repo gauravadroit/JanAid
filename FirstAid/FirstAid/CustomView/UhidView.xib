@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UhidView" customModule="JanAid" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="08t-jE-AKG" id="dqD-Ab-nMu"/>
+                <outlet property="registrationText" destination="tOI-Sx-dxg" id="hen-Nn-2Mo"/>
+                <outlet property="submitBtn" destination="lRC-xS-onl" id="WJj-nV-B2L"/>
+                <outlet property="uhidText" destination="eef-R0-HRk" id="Zmo-ME-dCT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-g5-IX7">
+                    <rect key="frame" x="15" y="15" width="345" height="20"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UHID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TA-u2-uMS">
+                    <rect key="frame" x="15" y="43" width="345" height="20"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter UHID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eef-R0-HRk">
+                    <rect key="frame" x="15" y="71" width="345" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Registration Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOI-Sx-dxg">
+                    <rect key="frame" x="15" y="144" width="345" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJo-Ii-SRk">
+                    <rect key="frame" x="15" y="116" width="345" height="20"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRC-xS-onl">
+                    <rect key="frame" x="195" y="204" width="165" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.3803921569" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Lee-j1-7aB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08t-jE-AKG">
+                    <rect key="frame" x="15" y="204" width="165" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.3803921569" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="aOF-0t-yEL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lRC-xS-onl" secondAttribute="trailing" constant="15" id="1kM-I5-OK7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oJo-Ii-SRk" secondAttribute="trailing" constant="15" id="2Zk-ZO-qTc"/>
+                <constraint firstItem="eef-R0-HRk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="5j1-56-A5p"/>
+                <constraint firstItem="lRC-xS-onl" firstAttribute="width" secondItem="08t-jE-AKG" secondAttribute="width" id="6T9-1i-cAa"/>
+                <constraint firstItem="tOI-Sx-dxg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="EpN-OW-dfD"/>
+                <constraint firstItem="0TA-u2-uMS" firstAttribute="top" secondItem="kbg-g5-IX7" secondAttribute="bottom" constant="8" id="T0v-QX-d3n"/>
+                <constraint firstItem="08t-jE-AKG" firstAttribute="top" secondItem="tOI-Sx-dxg" secondAttribute="bottom" constant="30" id="TZb-BI-3jO"/>
+                <constraint firstItem="tOI-Sx-dxg" firstAttribute="top" secondItem="oJo-Ii-SRk" secondAttribute="bottom" constant="8" id="U8D-5p-jvT"/>
+                <constraint firstItem="0TA-u2-uMS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="UGY-eg-Gdn"/>
+                <constraint firstItem="lRC-xS-onl" firstAttribute="top" secondItem="tOI-Sx-dxg" secondAttribute="bottom" constant="30" id="ZLm-4C-A5W"/>
+                <constraint firstItem="08t-jE-AKG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="adG-7X-7pH"/>
+                <constraint firstItem="lRC-xS-onl" firstAttribute="leading" secondItem="08t-jE-AKG" secondAttribute="trailing" constant="15" id="fN9-1h-lf5"/>
+                <constraint firstItem="eef-R0-HRk" firstAttribute="top" secondItem="0TA-u2-uMS" secondAttribute="bottom" constant="8" id="fof-5F-TvN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tOI-Sx-dxg" secondAttribute="trailing" constant="15" id="gTK-Hi-mdV"/>
+                <constraint firstItem="oJo-Ii-SRk" firstAttribute="top" secondItem="eef-R0-HRk" secondAttribute="bottom" constant="15" id="hgi-Wh-Mlb"/>
+                <constraint firstItem="oJo-Ii-SRk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="jGZ-SV-hvL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eef-R0-HRk" secondAttribute="trailing" constant="15" id="oAG-cc-BXk"/>
+                <constraint firstItem="kbg-g5-IX7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="rdS-8S-FPX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kbg-g5-IX7" secondAttribute="trailing" constant="15" id="vrl-lZ-JPo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0TA-u2-uMS" secondAttribute="trailing" constant="15" id="wlp-ht-2cG"/>
+                <constraint firstItem="kbg-g5-IX7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="zFu-TX-Y3b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="40.799999999999997" y="-139.43028485757122"/>
+        </view>
+    </objects>
+</document>
